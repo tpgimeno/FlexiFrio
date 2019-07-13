@@ -1,0 +1,7 @@
+{
+    "sly.serverUrl": "http://www.flexifrio.com",
+    "sly.remoteUser": "u84952102-tonylloadm",
+    "sly.remoteUserPassword": "112E1db044",
+    "sly.autoSync": true,
+    "sly.acceptSelfSignedCertificates": false
+}

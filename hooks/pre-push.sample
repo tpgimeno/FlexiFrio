@@ -26,11 +26,17 @@ z40=0000000000000000000000000000000000000000
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 IFS=' '
 =======
 >>>>>>> d6cf558f4c59b3b58453f6147d5d9bdd7bc27dcc
 =======
 >>>>>>> a326945c5708d7a3f70608870a3c9808220d5cad
+=======
+IFS=' '
+=======
+>>>>>>> d6cf558f4c59b3b58453f6147d5d9bdd7bc27dcc
+>>>>>>> 2a3a5387b37cd995405a4ff11734cb40b769adba
 while read local_ref local_sha remote_ref remote_sha
 do
 	if [ "$local_sha" = $z40 ]
@@ -53,13 +59,19 @@ do
 		then
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2a3a5387b37cd995405a4ff11734cb40b769adba
 			echo "Found WIP commit in $local_ref, not pushing"
 =======
 			echo >&2 "Found WIP commit in $local_ref, not pushing"
 >>>>>>> d6cf558f4c59b3b58453f6147d5d9bdd7bc27dcc
+<<<<<<< HEAD
 =======
 			echo >&2 "Found WIP commit in $local_ref, not pushing"
 >>>>>>> a326945c5708d7a3f70608870a3c9808220d5cad
+=======
+>>>>>>> 2a3a5387b37cd995405a4ff11734cb40b769adba
 			exit 1
 		fi
 	fi

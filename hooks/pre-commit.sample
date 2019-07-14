@@ -14,13 +14,19 @@ else
 	# Initial commit: diff against an empty tree object
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2a3a5387b37cd995405a4ff11734cb40b769adba
 	against=4b825dc642cb6eb9a060e54bf8d69288fbee4904
 =======
 	against=$(git hash-object -t tree /dev/null)
 >>>>>>> d6cf558f4c59b3b58453f6147d5d9bdd7bc27dcc
+<<<<<<< HEAD
 =======
 	against=$(git hash-object -t tree /dev/null)
 >>>>>>> a326945c5708d7a3f70608870a3c9808220d5cad
+=======
+>>>>>>> 2a3a5387b37cd995405a4ff11734cb40b769adba
 fi
 
 # If you want to allow non-ASCII filenames set this variable to true.

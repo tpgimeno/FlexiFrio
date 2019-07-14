@@ -60,13 +60,19 @@ then
 	then
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2a3a5387b37cd995405a4ff11734cb40b769adba
 		echo >&2 "$topic is already up-to-date with master"
 =======
 		echo >&2 "$topic is already up to date with master"
 >>>>>>> d6cf558f4c59b3b58453f6147d5d9bdd7bc27dcc
+<<<<<<< HEAD
 =======
 		echo >&2 "$topic is already up to date with master"
 >>>>>>> a326945c5708d7a3f70608870a3c9808220d5cad
+=======
+>>>>>>> 2a3a5387b37cd995405a4ff11734cb40b769adba
 		exit 1 ;# we could allow it, but there is no point.
 	else
 		exit 0

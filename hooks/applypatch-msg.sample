@@ -12,14 +12,20 @@
 . git-sh-setup
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2a3a5387b37cd995405a4ff11734cb40b769adba
 test -x "$GIT_DIR/hooks/commit-msg" &&
 	exec "$GIT_DIR/hooks/commit-msg" ${1+"$@"}
 =======
 commitmsg="$(git rev-parse --git-path hooks/commit-msg)"
 test -x "$commitmsg" && exec "$commitmsg" ${1+"$@"}
 >>>>>>> d6cf558f4c59b3b58453f6147d5d9bdd7bc27dcc
+<<<<<<< HEAD
 =======
 commitmsg="$(git rev-parse --git-path hooks/commit-msg)"
 test -x "$commitmsg" && exec "$commitmsg" ${1+"$@"}
 >>>>>>> a326945c5708d7a3f70608870a3c9808220d5cad
+=======
+>>>>>>> 2a3a5387b37cd995405a4ff11734cb40b769adba
 :

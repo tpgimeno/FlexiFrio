@@ -1,7 +1,14 @@
 [core]
 	repositoryformatversion = 0
+<<<<<<< HEAD
 	filemode = true
 	bare = true
+=======
+	filemode = false
+	bare = true
+	symlinks = false
+	ignorecase = true
+>>>>>>> a326945c5708d7a3f70608870a3c9808220d5cad
 	sharedrepository = 1
 [receive]
 	denyNonFastforwards = true

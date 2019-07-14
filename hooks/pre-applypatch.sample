@@ -10,10 +10,15 @@
 
 . git-sh-setup
 <<<<<<< HEAD
+<<<<<<< HEAD
 test -x "$GIT_DIR/hooks/pre-commit" &&
 	exec "$GIT_DIR/hooks/pre-commit" ${1+"$@"}
 =======
 precommit="$(git rev-parse --git-path hooks/pre-commit)"
 test -x "$precommit" && exec "$precommit" ${1+"$@"}
 >>>>>>> d6cf558f4c59b3b58453f6147d5d9bdd7bc27dcc
+=======
+precommit="$(git rev-parse --git-path hooks/pre-commit)"
+test -x "$precommit" && exec "$precommit" ${1+"$@"}
+>>>>>>> a326945c5708d7a3f70608870a3c9808220d5cad
 :

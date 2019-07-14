@@ -25,9 +25,12 @@ url="$2"
 z40=0000000000000000000000000000000000000000
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 IFS=' '
 =======
 >>>>>>> d6cf558f4c59b3b58453f6147d5d9bdd7bc27dcc
+=======
+>>>>>>> a326945c5708d7a3f70608870a3c9808220d5cad
 while read local_ref local_sha remote_ref remote_sha
 do
 	if [ "$local_sha" = $z40 ]
@@ -49,10 +52,14 @@ do
 		if [ -n "$commit" ]
 		then
 <<<<<<< HEAD
+<<<<<<< HEAD
 			echo "Found WIP commit in $local_ref, not pushing"
 =======
 			echo >&2 "Found WIP commit in $local_ref, not pushing"
 >>>>>>> d6cf558f4c59b3b58453f6147d5d9bdd7bc27dcc
+=======
+			echo >&2 "Found WIP commit in $local_ref, not pushing"
+>>>>>>> a326945c5708d7a3f70608870a3c9808220d5cad
 			exit 1
 		fi
 	fi

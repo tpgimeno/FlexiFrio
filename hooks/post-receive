@@ -1,0 +1,20 @@
+#!/bin/bash
+#Carpeta de mi respotorio git
+GIT_DIR="C:\Users\tonyl\Documents\Proyectos Web\FlexiFrio"
+#Carpeta destino de mi aplicación web
+DST_DIR="/kunden/homepages/23/d624845518/htdocs/"
+BRANCH="master"
+
+while read oldrev newrev ref
+do
+	# Revisa que el $ref sea igual al $BRANCH a observar
+	if [[ $ref = refs/heads/$BRANCH ]];
+	then
+		echo "Referencia recibida $ref: ";
+		echo "Deployando la rama ${BRANCH} En el servidor."
+		git --work-tree=$DST_DIR --git-dir=$GIT_DIR checkout -f
+	else
+		echo "Referencia recibida $ref. No se hizo algo: ";
+		echo "Solo la rama ${BRANCH} puede deployar el servidor."
+	fi
+done

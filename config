@@ -1,0 +1,13 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = true
+	sharedrepository = 1
+[receive]
+	denyNonFastforwards = true
+[remote "origin"]
+	url = git@github.com:tonyllo/FlexiFrio.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[remote "web"]
+	url = u84952102@home624845518.1and1-data.host/homepages/23/d624845518/htdocs/FlexiFrio/
+	fetch = +refs/heads/*:refs/remotes/web/*

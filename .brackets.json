@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "sly.serverUrl": "http://www.flexifrio.com",
     "sly.remoteUser": "u84952102-tonylloadm",
@@ -5,3 +6,12 @@
     "sly.autoSync": false,
     "sly.acceptSelfSignedCertificates": false
 }
+=======
+{
+    "sly.serverUrl": "http://www.flexifrio.com",
+    "sly.remoteUser": "u84952102-tonylloadm",
+    "sly.remoteUserPassword": "112E1db044",
+    "sly.autoSync": false,
+    "sly.acceptSelfSignedCertificates": false
+}
+>>>>>>> d6cf558f4c59b3b58453f6147d5d9bdd7bc27dcc

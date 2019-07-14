@@ -1,0 +1,2 @@
+#!/bin/bash
+git --work-tree=ssh//u84952102@home624845518.1and1-data.host/FlexiFrio --git-dir=C:/Users/tonyl/Documents/'Proyectos Web'/FlexiFrio.git checkout -f

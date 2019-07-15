@@ -1,28 +1,6 @@
 #!/bin/bash
-<<<<<<< HEAD
-<<<<<<< HEAD
-git --work-tree=ssh//u84952102@home624845518.1and1-data.host --git-dir=/homepages/23/d624845518/htdocs/FlexiFrio/ checkout -f
-=======
-#Carpeta de mi respotorio git
-GIT_DIR= "/kunden/homepages/23/d624845518/htdocs/"
-#Carpeta destino de mi aplicación web
-DST_DIR="/kunden/homepages/23/d624845518/htdocs/"
-BRANCH="master"
 
-while read oldrev newrev ref
-do
-	# Revisa que el $ref sea igual al $BRANCH a observar
-	if [[ $ref = refs/heads/$BRANCH ]];
-	then
-		echo "Referencia recibida $ref: ";
-		echo "Deployando la rama ${BRANCH} En el servidor."
-		git --work-tree=$DST_DIR --git-dir=$GIT_DIR checkout -f
-	else
-		echo "Referencia recibida $ref. No se hizo algo: ";
-		echo "Solo la rama ${BRANCH} puede deployar el servidor."
-	fi
-done
->>>>>>> a326945c5708d7a3f70608870a3c9808220d5cad
-=======
-git --work-tree=ssh//u84952102@home624845518.1and1-data.host/FlexiFrio --git-dir=C:/Users/tonyl/Documents/'Proyectos Web'/FlexiFrio.git checkout -f
->>>>>>> 2a3a5387b37cd995405a4ff11734cb40b769adba
+git --work-tree=/kunden/homepages/23/d624845518/htdocs/FlexiFrio/ --git-dir=/kunden/homepages/23/d624845518/htdocs/FlexiFrio/ checkout -f
+
+
+

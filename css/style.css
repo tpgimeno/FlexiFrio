@@ -1,0 +1,645 @@
+<<<<<<< HEAD
+@charset "utf-8";
+/* CSS Document */
+
+/*Estos elementos son comunes a todas la paginas*/
+
+@media only screen and (min-width: 768px) 
+{
+	body {
+		width: 100%;
+		margin: 0px;
+		font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana," sans-serif";
+	}
+
+	header {
+		width: 100%;
+		background-color: #0161d0;
+		text-align: right;
+
+	}
+
+	header ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: flex;
+	}
+
+	header li {
+		display: block;
+		padding: 10px;
+		border-radius: 3px;
+		border-right: 1px solid #fff;
+		border-bottom: 1px solid #fff;
+		text-align: left;
+		flex-grow: 0.3;
+	}
+
+	header li:hover {
+		background: rgba(255, 255, 255, 0.5);
+	}
+
+	header li a {
+		padding: 10px;
+		color: #ffffff;
+		font-size: 20px;
+		text-decoration: none;
+	}
+
+	#btn-menu {
+		display: none;
+	}
+
+	.menu {
+		text-align: left;
+	}
+
+	.menu label {
+		display: none;
+		width: 30px;
+		height: 30px;
+		padding: 20px;
+	}
+
+	.portada {
+		width: 100%;
+		background-image: url(../Prototipos/fachada.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 280px;
+		margin: 0px;
+
+	}
+
+	.portada h1 {
+		float: right;
+		width: 60%;
+		font-size: 24px;
+		color: #fff;
+	}
+
+	.logo_link {
+		text-align: right;
+	}
+
+	#logo {
+		width: 350px;
+		margin-top: 10px;
+	}
+
+	section {
+		width: 100%;
+
+	}
+
+	.servicios {
+		width: 100%;
+		position: relative;
+		display: flex;
+	}
+
+	.serv_item {
+		width: 100%;
+		height: 100%;
+		background-color: #fff;
+		position: relative;
+		overflow: hidden;
+		cursor: pointer;    
+		text-align: center;    
+	}
+
+	.serv_item:before {
+		content: "";
+		width: inherit;
+		height: inherit;
+		position: absolute;
+		background: #fff;
+		opacity: 0;
+		transition: opacity 0.2s ease-out;
+		-webkit-transition: opacity 500ms;
+		-moz-transition: opacity 500ms;
+		-o-transition: opacity 500ms;
+		-ms-transition: opacity 500ms;
+	}
+
+	.serv_item:hover:before {
+		opacity: 1;
+	}
+
+	.serv_item:hover .tag1 {
+		top: 0;
+		left:0;
+		-webkit-transition: all 500ms;
+		-moz-transition: all 500ms;
+		-o-transition: all 500ms;
+		-ms-transition: all 500ms;    
+	}
+	.serv_item:hover .mask {
+		top: 0;
+		left: 0;    
+		-webkit-transition: all 500ms;
+		-moz-transition: all 500ms;
+		-o-transition: all 500ms;
+		-ms-transition: all 500ms;
+	}
+
+	.serv_item .tag1 {
+		width: 100%;
+		height: 100%;
+		color: #444;
+		position: absolute;
+		display: inline-block;
+		top: 100%;
+		left:0%;
+	}
+
+	.serv_item .mask {
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.2);
+		position: absolute;
+		top: 100%;  
+	}
+
+	.serv_item img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.tag1 h3 {
+		text-align: center;
+		font-size: 1.4em;
+		padding:5px;
+	}
+
+	.tag1 p {
+		text-align: justify;    
+		font-size: 0.9em;
+		padding:20px;
+	}
+	.oferta{
+		width:50%;
+		float:left;
+	}
+	.of1 h2{
+		font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana," sans-serif";
+		padding-left: 5%;
+	}
+	.of1 p{
+		padding: 5%;
+	}
+	.of1 span a{
+		color:red;
+		cursor:pointer;
+	}
+	.banner{
+		width:50%;
+		height:100%;
+		float:left;
+		background-color: #0161d0;
+	}
+	.sidebanner {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	.sideimages {
+		width: 8%;
+		height: 12%;
+		flex-grow: 0.1;
+		padding: 15px;
+		vertical-align: middle;
+	}
+
+	footer {
+		width: 100%;
+		background-color: #0161d0;
+		display: flex;
+	}
+
+	.footitem {
+		width: 32%;
+		text-align: center;
+		font-size: 16px;
+	}
+
+	.footitem p {
+		text-align: left;
+		padding-left: 10px;
+		color: #fff;
+	}
+
+	.footitem ul {
+		list-style: none;
+		text-align: left;
+		color: #fff;
+		padding: 0;
+		padding-left: 10px;
+	}
+
+	.footitem a {
+		text-decoration: none;
+		color: #fff;
+	}
+
+	.footitem img {
+		width: 30px;
+		height: 30px;
+		padding: 5px;
+	}
+
+	.footitem h3 {
+		color: #fff;
+	}
+}
+@media only screen and (max-width: 768px) 
+{
+    .menu label {
+        display: block;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        position: absolute;
+        background: #0161d0;
+        width: 40%;
+        margin-left: -60%;
+        border-right: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        transition: all 0.4s ease;
+    }
+
+    .portada h1 {
+        float: right;
+    }
+
+    #titulo {
+        float: right;
+        width: 60%;
+    }
+
+    .logo_link {
+        width: 60%;
+        float: right;
+    }
+
+    #logo {
+        width: 250px;
+    }
+
+    #btn-menu:checked ~ ul {
+        margin: 0;
+    }
+    section{
+        margin:0;
+    }    
+    .servicios{
+        display: block;
+    }
+    .sidebanner{
+        display: inline-block;
+        text-align: center;
+    }
+    .sideimages {
+        width: 20%;
+        height: auto;
+    }
+    footer{
+        display:block;
+    }
+    .footitem{
+        width:100%;        
+    }
+    .footitem p{
+        text-align: center;
+    }
+    .footitem ul{
+        text-align: center;
+    }
+}
+=======
+@charset "utf-8";
+/* CSS Document */
+
+/*Estos elementos son comunes a todas la paginas*/
+
+@media only screen and (min-width: 768px) 
+{
+	body {
+		width: 100%;
+		margin: 0px;
+		font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana," sans-serif";
+	}
+
+	header {
+		width: 100%;
+		background-color: #0161d0;
+		text-align: right;
+
+	}
+
+	header ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: flex;
+	}
+
+	header li {
+		display: block;
+		padding: 10px;
+		border-radius: 3px;
+		border-right: 1px solid #fff;
+		border-bottom: 1px solid #fff;
+		text-align: left;
+		flex-grow: 0.3;
+	}
+
+	header li:hover {
+		background: rgba(255, 255, 255, 0.5);
+	}
+
+	header li a {
+		padding: 10px;
+		color: #ffffff;
+		font-size: 20px;
+		text-decoration: none;
+	}
+
+	#btn-menu {
+		display: none;
+	}
+
+	.menu {
+		text-align: left;
+	}
+
+	.menu label {
+		display: none;
+		width: 30px;
+		height: 30px;
+		padding: 20px;
+	}
+
+	.portada {
+		width: 100%;
+		background-image: url(../Prototipos/fachada.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 280px;
+		margin: 0px;
+
+	}
+
+	.portada h1 {
+		float: right;
+		width: 60%;
+		font-size: 24px;
+		color: #fff;
+	}
+
+	.logo_link {
+		text-align: right;
+	}
+
+	#logo {
+		width: 350px;
+		margin-top: 10px;
+	}
+
+	section {
+		width: 100%;
+		margin-top: 5%;
+	}
+
+	.servicios {
+		width: 100%;
+		position: relative;
+		display: flex;
+	}
+
+	.serv_item {
+		width: 100%;
+		height: 100%;
+		background-color: #fff;
+		position: relative;
+		overflow: hidden;
+		cursor: pointer;    
+		text-align: center;    
+	}
+
+	.serv_item:before {
+		content: "";
+		width: inherit;
+		height: inherit;
+		position: absolute;
+		background: #fff;
+		opacity: 0;
+		transition: opacity 0.2s ease-out;
+		-webkit-transition: opacity 500ms;
+		-moz-transition: opacity 500ms;
+		-o-transition: opacity 500ms;
+		-ms-transition: opacity 500ms;
+	}
+
+	.serv_item:hover:before {
+		opacity: 1;
+	}
+
+	.serv_item:hover .tag1 {
+		top: 0;
+		left:10%;
+		-webkit-transition: all 500ms;
+		-moz-transition: all 500ms;
+		-o-transition: all 500ms;
+		-ms-transition: all 500ms;    
+	}
+	.serv_item:hover .mask {
+		top: 0;
+		left:10%;    
+		-webkit-transition: all 500ms;
+		-moz-transition: all 500ms;
+		-o-transition: all 500ms;
+		-ms-transition: all 500ms;
+	}
+
+	.serv_item .tag1 {
+		width: 80%;
+		height: 100%;
+		color: #444;
+		position: absolute;
+		display: inline-block;
+		top: 100%;
+		left:10%;
+	}
+
+	.serv_item .mask {
+		width: 80%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.2);
+		position: absolute;
+		top: 100%; 
+		left:10%;
+	}
+
+	.serv_item img {
+		width: 80%;
+		height: 100%;
+	}
+
+	.tag1 h3 {
+		text-align: center;
+		font-size: 1.4em;
+		padding:5px;
+	}
+
+	.tag1 p {
+		text-align: justify;    
+		font-size: 0.9em;
+		padding:20px;
+	}
+	.oferta{
+		width:50%;
+		float:left;
+	}
+	.of1 h2{
+		font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana," sans-serif";
+		padding-left: 5%;
+	}
+	.of1 p{
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	.of1 span a{
+		color:red;
+		cursor:pointer;
+	}
+	.banner{
+		width:50%;
+		height:100%;
+		float:left;
+		background-color: #0161d0;
+	}
+	.sidebanner {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	.sideimages {
+		width: 8%;
+		height: 12%;
+		flex-grow: 0.1;
+		padding: 15px;
+		vertical-align: middle;
+	}
+
+	footer {
+		width: 100%;
+		background-color: #0161d0;
+		display: flex;
+	}
+
+	.footitem {
+		width: 32%;
+		text-align: center;
+		font-size: 16px;
+	}
+
+	.footitem p {
+		text-align: left;
+		padding-left: 10px;
+		color: #fff;
+	}
+
+	.footitem ul {
+		list-style: none;
+		text-align: left;
+		color: #fff;
+		padding: 0;
+		padding-left: 10px;
+	}
+
+	.footitem a {
+		text-decoration: none;
+		color: #fff;
+	}
+
+	.footitem img {
+		width: 30px;
+		height: 30px;
+		padding: 5px;
+	}
+
+	.footitem h3 {
+		color: #fff;
+	}
+}
+@media only screen and (max-width: 768px) 
+{
+    .menu label {
+        display: block;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        position: absolute;
+        background: #0161d0;
+        width: 40%;
+        margin-left: -60%;
+        border-right: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        transition: all 0.4s ease;
+    }
+
+    .portada h1 {
+        float: right;
+    }
+
+    #titulo {
+        float: right;
+        width: 60%;
+    }
+
+    .logo_link {
+        width: 60%;
+        float: right;
+    }
+
+    #logo {
+        width: 250px;
+    }
+
+    #btn-menu:checked ~ ul {
+        margin: 0;
+    }
+    section{
+        margin:0;
+    }    
+    .servicios{
+        display: block;
+    }
+    .sidebanner{
+        display: inline-block;
+        text-align: center;
+    }
+    .sideimages {
+        width: 20%;
+        height: auto;
+    }
+    footer{
+        display:block;
+    }
+    .footitem{
+        width:100%;        
+    }
+    .footitem p{
+        text-align: center;
+    }
+    .footitem ul{
+        text-align: center;
+    }
+}
+>>>>>>> d6cf558f4c59b3b58453f6147d5d9bdd7bc27dcc

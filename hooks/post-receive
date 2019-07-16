@@ -1,2 +1,0 @@
-#!/bin/bash
-git --work-tree=ssh://u84952102@home624845518.1and1-data.host --git-dir=/homepages/23/d624845518/htdocs/FlexiFrio/ checkout -f

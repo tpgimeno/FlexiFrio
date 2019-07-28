@@ -45,21 +45,15 @@
         font-size: 20px;
         text-decoration: none;
     }
-
     #btn-menu {
+        display:none;
+    }
+    header label{
         display: none;
     }
-
     .menu {
         text-align: left;
-    }
-
-    .menu label {
-        display: none;
-        width: 30px;
-        height: 30px;
-        padding: 20px;
-    }
+    }    
 
     .portada {
         width: 100%;
@@ -70,7 +64,6 @@
         margin: 0px;
 
     }
-
     .portada h1 {
         float: right;
         width: 60%;
@@ -189,7 +182,7 @@
         padding-left: 5%;
     }
 
-    .of1 p {
+    .of1:first-child p {
         padding: 2%;
     }
 
@@ -197,7 +190,12 @@
         color: red;
         cursor: pointer;
     }
-
+    .of2{
+        width:100%;
+    }
+    .of2 img{
+        width:100%;
+    }
     .banner {
         width: 50%;
         height: 100%;

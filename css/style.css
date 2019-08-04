@@ -81,7 +81,7 @@
     }
 
     section {
-        width: 100%;
+        width: 100%;        
 
     }
 
@@ -196,17 +196,55 @@
     .of2 img{
         width:100%;
     }
+    .flotaitem{
+        width: 100%;
+    }
+    .itemimg{
+        width: 50%;
+        float:left;
+        height: 500px;
+        text-align: center;
+    }
+    .headsection{
+        width: 100%;
+        text-align: center;
+    }
+    .itemimg img{
+        width: 80%;
+    }
+    .itemdata{
+        width: 50%;
+        float:left;
+        height: 500px;
+        background-color: #0161d0;  
+        color:rgb(255,255,225);
+    }
+    .itemdata h2{
+        text-align: center;
+        color: snow;
+    }
+    .itemdata h4,h6{
+        padding: 10px;
+    }
+    .itemdata ul{
+        padding: 20px;
+        margin-left: 20px;
+    }
+    .itemdata p{
+        padding:20px;
+    }
     .banner {
         width: 50%;
         height: 100%;
         float: left;
         background-color: #0161d0;
     }
-
+   
     .sidebanner {
         width: 100%;
         display: flex;
         justify-content: center;
+        padding-top: 100px;
     }
 
     .sideimages {
@@ -449,7 +487,14 @@
         color: red;
         cursor: pointer;
     }
-
+    .of2 {
+        width: 100%;
+    }
+    .of2 img{
+        width:100%;
+    }
+    
+    
     .banner {
         width: 50%;
         height: 100%;

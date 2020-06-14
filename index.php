@@ -81,8 +81,7 @@
         <div class="row">
             <div class="col">
                 <div class="alert alert-primary" role="alert">
-                    <?php
-                        echo $_GET('message');
+                    <?php echo 'Prueba';
                     ?>
                   </div>
             </div>

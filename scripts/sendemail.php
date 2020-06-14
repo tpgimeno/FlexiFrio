@@ -10,7 +10,7 @@ $mensaje = $nombre . "desea informacion sobre el alquiler/renting." . "\n" . "Su
 $para = 'alquileres@automotiveservices.es'; 
 $asunto = 'Solicitud informacion Renting'; 
 if(mail($para, $asunto, $mensaje, $headers)){
-	header("Location: ../index.html?message= $response");
+	header("Location: ../index.php?message= $response");
 }else{
 echo "Error sending email";
 }

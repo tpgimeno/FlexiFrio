@@ -32,7 +32,7 @@
     <script src="https://www.google.com/recaptcha/api.js"></script>
     <script>
         function onSubmit(token) {
-          document.getElementById("demo-form").submit();
+          document.getElementById("contact_form").submit();
         }
       </script>
 
@@ -90,11 +90,11 @@
         </div>
         <div class="row mb-5">
             <div class="col">
-                <form class="form" action="" method="post">
+                <form id="contact_form" class="form" action="/scripts/sendemail.php" method="post">
                     <div class="form-row">
                       <div class="form-group col">
                         <label for="inputName">Nombre</label>
-                        <input type="text" name="name" class="form-control" id="inputName">
+                        <input type="text" name="name" class="form-control" id="inputName" placeholder="Antonio Sanchez">
                       </div>
                     </div>
                     <div class="form-group">
@@ -103,14 +103,13 @@
                     </div>
                     <div class="form-group">
                       <label for="inputComment">Comentario</label>
-                      <textarea type="text" name="comment" class="form-control" id="inputComment" placeholder="Aqui su mensaje"></textarea>
+                      <textarea type="text" name="comment" rows="8" class="form-control" id="inputComment" placeholder="Aqui su mensaje"></textarea>
                     </div>
                     <div class="form-group text-right">
                         <button 
                             type="submit" 
-                            class="btn btn-primary align-self-end" 
-                            class="g-recaptcha" 
-                            data-sitekey="reCAPTCHA_site_key" 
+                            class="btn btn-primary align-self-end g-recaptcha" 
+                            data-sitekey="6LdDeqQZAAAAAAMtFAloo-0rf8IFXu_oEVRxDncC" 
                             data-callback='onSubmit' 
                             data-action='submit'>Enviar
                         </button>

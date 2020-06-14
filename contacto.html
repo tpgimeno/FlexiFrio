@@ -1,102 +1,167 @@
 <!doctype html>
-<html>
+<html lang="es">
+
 <head>
-<meta charset="utf-8">
-<link type="text/css" rel="stylesheet" href="css/style.css" />
-<title>Flexi Frio Automotive</title>
+    <meta charset="utf-8">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <title>Flexi Frio Automotive</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-W9MF8K2');</script>
+    <!-- End Google Tag Manager -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136312216-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-136312216-1');
+
+    </script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+        function onSubmit(token) {
+          document.getElementById("demo-form").submit();
+        }
+      </script>
+
 </head>
 
 <body>
-<!-- Google Tag Manager (noscript) -->
+    <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W9MF8K2"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     
     <script type="text/javascript" src="scripts/myscript.js"></script>
-    <header>
-        <input type="checkbox" id="btn-menu">
-            <label for="btn-menu"><img src="images/MainMenu.png"></label>
-        <nav class="menu">            
-            <ul>
-                <li><a href="index.html"> Inicio </a></li>
-                <li><a href="flota.html"> Flota </a></li>
-                <li><a href="http://www.automotivate.es">V.O.</a></li>
-                <li><a href="nosotros.html"> Conócenos </a></li>
-                <li><a href="contacto.html"> Contacto </a></li>
-            </ul>
-        </nav>
-        <div class="portada">
-            <div class="logo_link"><img id="logo" src="images/logoflexifriocopia.svg" /></div>
-            <div id="titulo">
-                <h1>ALQUILER Y RENTING FLEXIBLE DE VEHICULOS FRIGORIFICOS</h1>
+    <div id="header" class="container sticky-top">
+        <div id="header-row" class="row">
+            <div class="col-6 col-md-3 mt-1">              
+                <img class="icon" src="icons/v2.0/whatsapp-logo.svg" alt="Whatsapp">           
+                <img class="icon" src="icons/v2.0/facebook-logo.fw.svg" alt="Facebook">          
+                <img class="icon" src="icons/v2.0/logo-de-instagramwhite.fw.svg" alt="Instagram">                
+            </div>
+            <div class="col-3 offset-6 col-md-9 ml-auto">
+                <nav class="navbar navbar-expand-lg navbar-light">                 
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#inicio_flota">Flota</a>
+                        </li>                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>                         
+                    </div>
+                  </nav>
+            </div>
+        </div>        
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col portada  text-right">
+                <img src="/Prototipos/fachada.jpg" id="header_img" alt="Automotive">
+                <div id="titulo">
+                    <h1>ALQUILER Y RENTING FLEXIBLE DE VEHICULOS FRIGORIFICOS</h1>
+                    <h2>Alquiler a corto o largo plazo</h2> 
+                </div>                    
+            </div>            
+        </div>        
+        <div id="row-form" class="row">
+            <div class="col">
+                <h2> Contacto </h2>
             </div>
         </div>
-    </header>
-<section>
-	<article class="formcontacto">
-    	
-      <h3>FORMULARIO DE CONTACTO</h3>
-      <form action="scripts/sendemail.php" id="fcontacto" method="post">
-      <label for="nom">Nombre: </label>
-      <input type="text" name="nom" id="nom" class="textbox">
-      <br>
-      <label for="email">Email: </label>
-      <input type="email" name="email" id="email" class="textbox">
-      <br>
-      <label for="tel">Telefono: </label>
-      <input type="tel" name="tel" id="tel" class="textbox">
-      <br>
-      <label for="pob">Poblacion: </label>
-      <input type="text" name="pob" id="pob" class="textbox">
-      <br>
-      <br>
-      <label for="coment" id="clab">Comentario: </label>
-      <textarea name="coment" rows="10" cols="50" id="coment"></textarea>
-      <br>
-      <input type="button" name="clean" class="fbutton" value="Limpiar">
-      <input type="submit" name="enviar" class="fbutton" value="Enviar"> 
-      </form>    	
-   	</article>
-    <article id="location">
-    	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.595573549562!2d0.4110275153959508!3d40.417809279365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6a093144d0b815e7!2sFlexi+Frio+Automotive!5e0!3m2!1ses!2ses!4v1552597217794" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </article>
-</section>
-<aside>
-	<div class="sidebanner">   
-    	<img src="icons/atencion.png"/>
-        <img src="icons/seguimiento.png"/>
-        <img src="icons/mantenimientos.png"/>
-        <img src="icons/neumaticos.png"/> 
-        <img src="icons/entrega.png"/>	
-	</div>
-</aside>
-<footer>
-        <div class="footitem">
-            <p> <span>© </span>
-                AUTOMOTIVE SERVICES 2014 SLU<br>
-                CARRETERA. N-340a KM 1043,5 <br>
-                BENICARLO 12580 CASTELLON
-            </p>
+        <div class="row mb-5">
+            <div class="col">
+                <form class="form" action="" method="post">
+                    <div class="form-row">
+                      <div class="form-group col">
+                        <label for="inputName">Nombre</label>
+                        <input type="text" name="name" class="form-control" id="inputName">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputEmail">Email</label>
+                      <input type="email" name="email" class="form-control" id="inputEmail" placeholder="ejemplo@ejemplo.com">
+                    </div>
+                    <div class="form-group">
+                      <label for="inputComment">Comentario</label>
+                      <textarea type="text" name="comment" class="form-control" id="inputComment" placeholder="Aqui su mensaje"></textarea>
+                    </div>
+                    <div class="form-group text-right">
+                        <button 
+                            type="submit" 
+                            class="btn btn-primary align-self-end" 
+                            class="g-recaptcha" 
+                            data-sitekey="reCAPTCHA_site_key" 
+                            data-callback='onSubmit' 
+                            data-action='submit'>Enviar
+                        </button>
+                    </div>                   
+                    
+                  </form>
+            </div>
+        </div>
+        <div class="row footer">
+            <div class="col-4 footitem">
+                <p> <span>© </span>
+                    AUTOMOTIVE SERVICES 2014 SLU<br>
+                    CARRETERA. N-340a KM 1043,5 <br>
+                    BENICARLO 12580 CASTELLON
+                </p>
+    
+                <ul>
+                    <li><span>Telefono:<a class="link" href=""> 964471950</a></span></li>
+                    <li><span>Email:<a class="link" href=""> alquileres@flexifrio.com</a></span></li>
+                </ul>
+            </div>
+            <div class="col-4 footitem">
+                <ul id="list_legal">
+                    <li><a class="link" href="">Política de Privacidad</a></li>
+                    <li><a class="link" href="">Política de Cookies</a></li>
+                    <li><a class="link" href="">Aviso legal</a></li>
+                </ul>
+            </div>
+            <div class="col-4 footitem">
+                <h3>Sigue Conectado</h3>
+                <a href=""><img src="icons/fdefacebook.png" alt="Facebook"/></a>
+                <a href=""><img src="icons/whatsappwhite.png" alt="WhatsApp"/></a>
+                <a href=""><img src="icons/logo-de-instagramwhite.png" alt="Instagram"/></a>
+                <a href=""><img src="icons/linkedin-logowhite.png" alt="LinkedIn"/></a>
+            </div> 
+            <div class="col footitem text-center">
+                <span>Designed by <a class="link" href="http://www.tpgimeno.com">@TpGimeno</a></span>
+            </div>          
+        </div>
+        <div class="row">
+            <div class="col">
+                <div>Icons made by <a href="https://www.flaticon.es/autores/chanut" title="Chanut">Chanut</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.com</a></div>
+            </div>
+        </div>
+        
+    </div> 
 
-            <ul>
-                <li><span>Telefono:<a href=""> 964471950</a></span></li>
-                <li><span>Email:<a href=""> alquileres@flexifrio.com</a></span></li>
-            </ul>
-        </div>
-        <div class="footitem">
-            <ul id="list_legal">
-                <li><a href="">Política de Privacidad</a></li>
-                <li><a href="">Política de Cookies</a></li>
-                <li><a href="">Aviso legal</a></li>
-            </ul>
-        </div>
-        <div class="footitem">
-            <h3>Sigue Conectado</h3>
-            <a href=""><img src="icons/fdefacebook.png" /></a>
-            <a href=""><img src="icons/whatsappwhite.png" /></a>
-            <a href=""><img src="icons/logo-de-instagramwhite.png" /></a>
-            <a href=""><img src="icons/linkedin-logowhite.png" /></a>
-        </div>
-    </footer>
+     
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -22,6 +22,9 @@ body
     height: 2em;
     margin: 10px;
 }
+.alert{
+    margin-top: 100px;
+}
 .portada img
 {
     position: absolute;

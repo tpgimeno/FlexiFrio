@@ -1,8 +1,6 @@
 *.xlsx
 *.ai
-
-
-.brackets.json
+brackets.json
 *.ste
 *.xd
 *.vp

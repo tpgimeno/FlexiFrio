@@ -1,6 +1,7 @@
 <?php
-ini_set( 'display_errors', 1 );
-error_reporting( E_ALL );
+
+require_once 'response.php';
+
 $nombre = $_POST['name'];
 $email = $_POST['email'];
 $coment = $_POST['coment'];
@@ -9,9 +10,7 @@ $mensaje = $nombre . "desea informacion sobre el alquiler/renting." . "\n" . "Su
 $para = 'alquileres@automotiveservices.es'; 
 $asunto = 'Solicitud informacion Renting'; 
 if(mail($para, $asunto, $mensaje, $headers)){
-	$url = '../index.html';
-	$http_response_header = $this->get_headers(); 
-	var_dump($http_response_header);die;
+	header("Location: ../index.html?message= $response");
 }else{
 echo "Error sending email";
 }

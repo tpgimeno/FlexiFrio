@@ -5,7 +5,7 @@ $nombre = $_POST['name'];
 $email = $_POST['email'];
 $coment = $_POST['coment'];
 $headers = 'From: ' . $email;
-$mensaje = $nombre . "desea informacion sobre el alquiler/renting." . "\n" . "Sus datos de contacto son: " . "\n" . " - Email: " . $email . "\n" . " - Telefono: " . $tel . "\n" . " - Poblacion: " . $pob;
+$mensaje = $nombre . "desea informacion sobre el alquiler/renting." . "\n" . "Sus datos de contacto son: " . "\n" . " - Email: " . $email . "\n";
 $para = 'alquileres@automotiveservices.es'; 
 $asunto = 'Solicitud informacion Renting'; 
 if(mail($para, $asunto, $mensaje, $headers)){

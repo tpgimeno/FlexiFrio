@@ -1,10 +1,8 @@
 <?php
 ini_set( 'display_errors', 1 );
 error_reporting( E_ALL );
-$nombre = $_POST['nom'];
+$nombre = $_POST['name'];
 $email = $_POST['email'];
-$tel = $_POST['tel'];
-$pob = $_POST['pob'];
 $coment = $_POST['coment'];
 $headers = 'From: ' . $email;
 $mensaje = $nombre . "desea informacion sobre el alquiler/renting." . "\n" . "Sus datos de contacto son: " . "\n" . " - Email: " . $email . "\n" . " - Telefono: " . $tel . "\n" . " - Poblacion: " . $pob;
